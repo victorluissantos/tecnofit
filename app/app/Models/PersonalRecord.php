@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class PersonalRecord extends Model
 {
+
     use HasFactory;
+
+    protected $table = 'personal_records';
 
     protected $fillable = [
         'user_id',
