@@ -11,3 +11,7 @@ Route::middleware('auth:sanctum')->group(function () {
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
+
+Route::get('login', function () {
+    return response()->json(['error' => 'Unauthenticated.'], 401);
+})->name('login');
