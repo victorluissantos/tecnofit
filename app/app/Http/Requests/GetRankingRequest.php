@@ -18,4 +18,11 @@ class GetRankingRequest extends FormRequest
             'movement' => 'required|integer|min:1',
         ];
     }
+
+    protected function prepareForValidation()
+    {
+        $this->merge([
+             'movement' => $this->route('movement'),
+        ]);
+    }
 }
