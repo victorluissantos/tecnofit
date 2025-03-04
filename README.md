@@ -73,6 +73,44 @@ Exemplo:
 GET http://localhost:8000/api/ranking/1
 ```
 
+
+#### Testando a API com Postman
+
+Para facilitar os testes da API, incluímos um arquivo de coleção do Postman chamado postman-backend-api.json na raiz do repositório. Siga os passos abaixo para importar a coleção e testar os endpoints:
+
+    Baixe o arquivo de coleção:
+
+    Você pode baixar o arquivo aqui.
+
+    Importe a coleção no Postman:
+        Abra o Postman.
+        Clique em Import no canto superior esquerdo.
+        Selecione a opção Raw Text ou Upload Files e escolha o arquivo postman-backend-api.json.
+        Clique em Continue e depois em Import.
+
+    Teste o endpoint de login:
+        Na coleção importada, execute a requisição Login.
+        Use as credenciais conforme definidas no seed (por exemplo, email: mosciski.angeline@example.com e senha: password).
+        Se o login for bem-sucedido, um token será retornado.
+
+    Configure o token no Postman:
+        Após o login, copie o token retornado.
+        Defina uma variável de ambiente (ou global) chamada token e cole o valor do token.
+        Essa variável é usada no header da requisição de Ranking com o formato:
+
+    Authorization: Bearer {{token}}
+
+Teste o endpoint de Ranking:
+
+    Na coleção, execute a requisição Get Ranking - Movimento 1.
+    A URL utilizada será:
+
+```bash
+GET http://localhost:8000/api/ranking/1
+```
+Você deverá receber um JSON com o nome do movimento e o ranking dos usuários, com suas posições, recordes e datas.
+
+
 #### Comandos úteis
 Entrar no container da aplicação Laravel
 ```bash
@@ -91,6 +129,7 @@ Parar os containers
 docker-compose down
 ```
 
+
 Requisitos Atendidos
 
 ✅ Código em PHP 8.1 usando Laravel 10
@@ -99,6 +138,10 @@ Requisitos Atendidos
 ✅ Implementação da API de ranking com tratamento correto de empate no ranking
 ✅ Instruções de execução claras e completas neste README
 ✅ Código versionado e publicado no GitHub
+✅ Validação e Sanitização de Dados
+✅ Autenticação e Autorização
+✅ Tratamento de Erros
+
 Observações
 
     Todos os comandos artisan devem ser executados dentro do container tecnofit_app.
