@@ -19,8 +19,8 @@ Este repositório contém a solução para o desafio técnico da TecnoFit, desen
 ### 1. Clonar o repositório
 
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO>
-cd <NOME_DA_PASTA_CLONADA>
+git clone https://github.com/victorluissantos/tecnofit
+cd tecnofit
 ```
 
 ### 2. Subir os containers Docker
