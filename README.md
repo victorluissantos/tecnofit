@@ -1,13 +1,13 @@
 # TecnoFit - Coding Challenge
 
-Este repositório contém a solução para o desafio técnico da TecnoFit, desenvolvida em PHP 8.1 utilizando o framework Laravel 10. O projeto consiste em uma API de ranking de personal records para diferentes movimentos (exercícios).
+Este repositório contém a solução para o desafio técnico da TecnoFit, desenvolvida em PHP 8.1 utilizando o framework Laravel 12. O projeto consiste em uma API de ranking de personal records para diferentes movimentos (exercícios).
 
 ---
 
 ## Tecnologias Utilizadas
 
 - **PHP 8.1**
-- **Laravel 10**
+- **Laravel 12**
 - **Docker + Docker Compose**
 - **MySQL 8**
 - **Arquitetura SOLID e Clean Code**
@@ -131,7 +131,7 @@ docker-compose down
 
 Requisitos Atendidos
 
-✅ Código em PHP 8.1 usando Laravel 10
+✅ Código em PHP 8.1 usando Laravel 12
 ✅ Aplicação containerizada com Docker e Docker Compose
 ✅ Arquitetura seguindo boas práticas (SOLID, Clean Code, Separation of Concerns)
 ✅ Implementação da API de ranking com tratamento correto de empate no ranking
