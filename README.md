@@ -101,7 +101,6 @@ Para facilitar os testes da API, incluímos um arquivo de coleção do Postman c
     Authorization: Bearer {{token}}
 
 Teste o endpoint de Ranking:
-
     Na coleção, execute a requisição Get Ranking - Movimento 1.
     A URL utilizada será:
 
